@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    .exit{
+        background-color: turquoise;
+        width: 200px;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <h1>DOM1</h1>
+    <H3> welcome to my webpage niggas</H3>
+    <br>
+    <button class="exit">
+        Exit
+    </button>
+</body>
+</html>
+<SCRIPT>
+    console.log("HELLO WORLD");
+    var btn=document.querySelector(".exit")
+    btn.addEventListener("click", evebutton);
+    var flag = false
+    function evebutton(){
+        // alert("Button clicked!")
+        flag=!flag
+        if(flag){
+        var h3=document.querySelector("h3")
+        h3.innerText = "okay thanks for visiting"
+        btn.innerHTML = "Welcome!!"
+        }
+        else{
+            var h3= document.querySelector("h3")
+            h3.innerText = "Welcome to my webpage !"
+            btn.innerText = "Exit"
+            h3.style.color = "blue"
+        }
+    
+
+    }
+</SCRIPT>
